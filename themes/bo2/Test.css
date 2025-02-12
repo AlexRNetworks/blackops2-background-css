@@ -3,7 +3,8 @@
     background: url('https://i.ibb.co/vCQH6XFn/apps-32777-64998372950229933-77155980-5b6a-4296-88e2-959fda591dee.png') no-repeat center center fixed;
     background-size: cover; /* Ensures the background image covers the entire container */
     color: #f2f2f2; /* Light text for readability */
-    font-family: 'Times New Roman', serif; /* Set the font to Times New Roman */
+    font-family: 'Times New Roman', serif; /* Using Times New Roman font */
+    font-size: 12px; /* Smaller font size */
     height: 100vh; /* Ensure full height of the viewport */
     overflow: hidden; /* Prevent scrolling */
 }
@@ -15,7 +16,7 @@
 }
 
 #app-mount ::-webkit-scrollbar-thumb {
-    background-color: #f0c000; /* BO2-inspired yellow for the scrollbar thumb */
+    background-color: #FF8C00; /* Darker orange for the scrollbar thumb */
     border-radius: 10px;
 }
 
@@ -42,27 +43,27 @@
 }
 
 #app-mount .sidebarRegion__23e6b .side_b3f026 .item_b3f026:hover {
-    background-color: #f0c000; /* Highlight effect with BO2 yellow */
+    background-color: #FF8C00; /* Duller orange hover effect */
     color: #212121; /* Dark text color when hovering */
 }
 
 /* Selected Sidebar Item */
 #app-mount .sidebarRegion__23e6b .side_b3f026 .selected_b3f026 {
-    background-color: #f0c000 !important; /* Highlight selected item with yellow */
+    background-color: #FF8C00 !important; /* Highlight selected item with dark orange */
     color: #212121;
 }
 
 /* Buttons */
 #app-mount .lookFilled__201d5 {
-    background-color: #f0c000 !important; /* BO2 yellow button */
-    color: #212121; /* Dark text on yellow button */
+    background-color: #FF8C00 !important; /* Darker orange button */
+    color: #212121; /* Dark text on orange button */
     border-radius: 5px;
     padding: 10px 20px;
     font-weight: bold;
 }
 
 #app-mount .lookFilled__201d5:hover {
-    background-color: #f2a900; /* Darker yellow for hover effect */
+    background-color: #e67800; /* Darker orange for hover effect */
 }
 
 /* Input Fields */
@@ -75,7 +76,7 @@
 }
 
 #app-mount .inputDefault__0f084:focus {
-    border-color: #f0c000; /* Yellow border on focus */
+    border-color: #FF8C00; /* Dark orange border on focus */
 }
 
 /* Cards */
@@ -105,13 +106,13 @@
 }
 
 #app-mount .tabBar_d6f9e9 .tabBarItem_d6f9e9.selected_b3f026 {
-    background-color: #f0c000; /* Highlight selected tab with BO2 yellow */
+    background-color: #FF8C00; /* Highlight selected tab with dark orange */
     color: #212121;
 }
 
 /* Hover Effects for Tabs */
 #app-mount .tabBar_d6f9e9 .tabBarItem_d6f9e9:hover {
-    background-color: #f2a900; /* Darker yellow for hover effect */
+    background-color: #e67800; /* Darker orange for hover effect */
 }
 
 /* Profile and User Settings */
@@ -140,5 +141,5 @@
 }
 
 #app-mount .serverSettings__f23de1 .settingCard__73069:hover {
-    background-color: #f2a900; /* Hover effect with BO2 yellow */
+    background-color: #e67800; /* Hover effect with darker orange */
 }
