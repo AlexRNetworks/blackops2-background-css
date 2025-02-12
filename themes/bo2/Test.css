@@ -1,145 +1,94 @@
-/* General Body */
-#app-mount {
-    background: url('https://i.ibb.co/vCQH6XFn/apps-32777-64998372950229933-77155980-5b6a-4296-88e2-959fda591dee.png') no-repeat center center fixed;
-    background-size: cover; /* Ensures the background image covers the entire container */
-    color: #f2f2f2; /* Light text for readability */
-    font-family: 'Times New Roman', serif; /* Using Times New Roman font */
-    font-size: 12px; /* Smaller font size */
-    height: 100vh; /* Ensure full height of the viewport */
-    overflow: hidden; /* Prevent scrolling */
+/**
+ * @name BlackOps2 Theme
+ * @author AlexRNetworks
+ * @version 1.0.0
+ * @description A BlackOps 2 theme with a custom orange and black color scheme and background.
+ * @source https://github.com/AlexRNetworks/blackops2-background-css
+ */
+
+@import url('https://raw.githack.com/AlexRNetworks/blackops2-background-css/main/test.css');
+
+/* Root Variables for theme */
+:root {
+    /* Background Image */
+    --background: url('https://i.ibb.co/vCQH6XFn/apps-32777-64998372950229933-77155980-5b6a-4296-88e2-959fda591dee.png') !important;
+    
+    /* Text Colors */
+    --activetext-colour: white !important;
+    --primary1-colour: #FF8C00 !important; /* Darker Orange */
+    --primary2-colour: rgba(255,140,0,0.5) !important; /* Semi-transparent orange */
+    --primary3-colour: rgba(100,60,0,0.6) !important; /* Darker transparent orange */
+
+    --secondary1-colour: rgba(50,50,50,0.3) !important;
+    --secondary2-colour: rgba(100,100,100,0.5) !important;
+    --secondary3-colour: rgba(0,0,0,0.5) !important;
+
+    /* Transparency Effects */
+    --transparency-1: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) !important;
+    --transparency-2: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) !important;
+    --transparency-3: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) !important;
+    --transparency-4: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) !important;
+    --transparency-5: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) !important;
+
+    /* Font and Styling */
+    --font-family: 'Times New Roman', serif !important;
+    --font-size: 14px !important; /* Adjust the font size to be smaller */
+    --font-weight: normal !important;
 }
 
-/* Scrollbars */
-#app-mount ::-webkit-scrollbar {
-    width: 10px;
-    background-color: #2c2f36; /* Dark gray scrollbar */
+/* General Body Styles */
+body {
+    background: var(--background) !important;
+    font-family: var(--font-family) !important;
+    font-size: var(--font-size) !important;
+    font-weight: var(--font-weight) !important;
+    color: var(--activetext-colour) !important;
 }
 
-#app-mount ::-webkit-scrollbar-thumb {
-    background-color: #FF8C00; /* Darker orange for the scrollbar thumb */
-    border-radius: 10px;
+/* Header Styling */
+header, h1, h2, h3, h4, h5, h6 {
+    color: var(--primary1-colour) !important;
 }
 
-#app-mount ::-webkit-scrollbar-track {
-    background-color: #1a1a1a; /* Dark background for the scrollbar track */
+/* Links Styling */
+a {
+    color: var(--primary1-colour) !important;
 }
 
-/* Sidebar */
-#app-mount .sidebarRegion__23e6b {
-    background-color: rgba(33, 33, 33, 0.8); /* Transparent dark background to blend with the image */
-    padding: 15px 20px;
-    width: 220px;
-    border-right: 2px solid #444; /* Dark border for sidebar separation */
-}
-
-/* Sidebar Header */
-#app-mount .sidebarRegion__23e6b .side_b3f026 .item_b3f026 {
-    background-color: #333; /* Dark background for each sidebar item */
-    border-radius: 5px;
-    margin-bottom: 5px;
-    padding: 10px;
-    font-size: 14px;
-    transition: all 0.2s ease;
-}
-
-#app-mount .sidebarRegion__23e6b .side_b3f026 .item_b3f026:hover {
-    background-color: #FF8C00; /* Duller orange hover effect */
-    color: #212121; /* Dark text color when hovering */
-}
-
-/* Selected Sidebar Item */
-#app-mount .sidebarRegion__23e6b .side_b3f026 .selected_b3f026 {
-    background-color: #FF8C00 !important; /* Highlight selected item with dark orange */
-    color: #212121;
+a:hover {
+    color: var(--primary2-colour) !important;
 }
 
 /* Buttons */
-#app-mount .lookFilled__201d5 {
-    background-color: #FF8C00 !important; /* Darker orange button */
-    color: #212121; /* Dark text on orange button */
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-weight: bold;
+button {
+    background-color: var(--primary1-colour) !important;
+    color: var(--activetext-colour) !important;
+    padding: 10px 15px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
 }
 
-#app-mount .lookFilled__201d5:hover {
-    background-color: #e67800; /* Darker orange for hover effect */
+button:hover {
+    background-color: var(--primary2-colour) !important;
 }
 
-/* Input Fields */
-#app-mount .inputDefault__0f084 {
-    background-color: #333; /* Dark background for input fields */
-    color: #f2f2f2; /* Light text inside input fields */
-    border: 1px solid #444; /* Border to match theme */
-    padding: 10px;
-    border-radius: 5px;
+/* Transparency/Overlay Effects */
+.overlay {
+    background: var(--transparency-1) !important;
 }
 
-#app-mount .inputDefault__0f084:focus {
-    border-color: #FF8C00; /* Dark orange border on focus */
+/* Footer Styling */
+footer {
+    background: var(--secondary1-colour) !important;
+    color: var(--activetext-colour) !important;
+    padding: 10px !important;
+    text-align: center !important;
 }
-
-/* Cards */
-#app-mount .card__73069 {
-    background-color: #282828; /* Dark card background */
-    border: 1px solid #444;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 10px 0;
-}
-
-/* Modals */
-#app-mount .modal__4f3da {
-    background-color: rgba(51, 51, 51, 0.9); /* Dark modal background with slight transparency */
-    border-radius: 10px;
-    padding: 20px;
-    color: #f2f2f2; /* Light text for modals */
-}
-
-/* Navigation Bar */
-#app-mount .tabBar_d6f9e9 .tabBarItem_d6f9e9 {
-    background-color: #212121;
-    color: #f2f2f2;
-    padding: 10px 20px;
-    font-weight: bold;
-    text-align: center;
-}
-
-#app-mount .tabBar_d6f9e9 .tabBarItem_d6f9e9.selected_b3f026 {
-    background-color: #FF8C00; /* Highlight selected tab with dark orange */
-    color: #212121;
-}
-
-/* Hover Effects for Tabs */
-#app-mount .tabBar_d6f9e9 .tabBarItem_d6f9e9:hover {
-    background-color: #e67800; /* Darker orange for hover effect */
-}
-
-/* Profile and User Settings */
-#app-mount .accountProfileCard__1fed1 {
-    background-color: rgba(44, 47, 54, 0.8); /* Dark background with transparency */
-    border-radius: 5px;
-    padding: 15px;
-}
-
-#app-mount .accountProfileCard__1fed1:hover {
-    background-color: #444; /* Darker shade on hover */
-}
-
-/* Server Settings */
-#app-mount .serverSettings__f23de1 {
-    background-color: rgba(51, 51, 51, 0.9);
-    border-radius: 5px;
-    padding: 15px;
-    margin: 20px 0;
-}
-
-#app-mount .serverSettings__f23de1 .settingCard__73069 {
-    background-color: #444; /* Dark background for server settings */
-    color: #f2f2f2; /* Light text */
-    border-radius: 5px;
-}
-
-#app-mount .serverSettings__f23de1 .settingCard__73069:hover {
-    background-color: #e67800; /* Hover effect with darker orange */
+  
+/* Additional styling to ensure the theme is applied consistently */
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
 }
