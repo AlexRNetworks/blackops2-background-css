@@ -1,94 +1,38 @@
 /**
- * @name BlackOps2 Theme
- * @author AlexRNetworks
- * @version 1.0.0
- * @description A BlackOps 2 theme with a custom orange and black color scheme and background.
- * @source https://github.com/AlexRNetworks/blackops2-background-css
+ * @name GGO Kirito
+ * @author VaporousCreeper
+ * @version 1.3.X
+ * @description A theme with Kirito and Deathgun fighting in GGO (Gun Gale Online)
+ * @source https://github.com/VaporousCreeper/BetterDiscord-ThemesAndPlugins/tree/master/Themes/GGO_Kirito
  */
 
-@import url('https://raw.githack.com/AlexRNetworks/blackops2-background-css/main/test.css');
+@import url('https://raw.githack.com/Ruben7173/Ruben7173.github.io/master/BetterDiscord-Themes/Modules/transparency2.css');
+@import url('https://raw.githack.com/VaporousCreeper/BetterDiscord-ThemesAndPlugins/master/Themes/GGO_Kirito/core.css');
 
-/* Root Variables for theme */
-:root {
-    /* Background Image */
-    --background: url('https://i.ibb.co/vCQH6XFn/apps-32777-64998372950229933-77155980-5b6a-4296-88e2-959fda591dee.png') !important;
-    
-    /* Text Colors */
-    --activetext-colour: white !important;
-    --primary1-colour: #FF8C00 !important; /* Darker Orange */
-    --primary2-colour: rgba(255,140,0,0.5) !important; /* Semi-transparent orange */
-    --primary3-colour: rgba(100,60,0,0.6) !important; /* Darker transparent orange */
+:root{
+    --background: url('https://images.alphacoders.com/632/632525.png');
+    --activetext-colour: white;
 
-    --secondary1-colour: rgba(50,50,50,0.3) !important;
-    --secondary2-colour: rgba(100,100,100,0.5) !important;
-    --secondary3-colour: rgba(0,0,0,0.5) !important;
+    --primary1-colour: red;
+    --primary2-colour: rgba(255,0,0,0.5);
+    --primary3-colour: rgba(100,0,0,0.6);
 
-    /* Transparency Effects */
-    --transparency-1: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) !important;
-    --transparency-2: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) !important;
-    --transparency-3: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) !important;
-    --transparency-4: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) !important;
-    --transparency-5: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) !important;
+    --secondary1-colour: rgba(50,50,50,0.3);
+    --secondary2-colour: rgba(100,100,100,0.5);
+    --secondary3-colour: rgba(0,0,0,0.5);
 
-    /* Font and Styling */
-    --font-family: 'Times New Roman', serif !important;
-    --font-size: 14px !important; /* Adjust the font size to be smaller */
-    --font-weight: normal !important;
-}
-
-/* General Body Styles */
-body {
-    background: var(--background) !important;
-    font-family: var(--font-family) !important;
-    font-size: var(--font-size) !important;
-    font-weight: var(--font-weight) !important;
-    color: var(--activetext-colour) !important;
-}
-
-/* Header Styling */
-header, h1, h2, h3, h4, h5, h6 {
-    color: var(--primary1-colour) !important;
-}
-
-/* Links Styling */
-a {
-    color: var(--primary1-colour) !important;
-}
-
-a:hover {
-    color: var(--primary2-colour) !important;
-}
-
-/* Buttons */
-button {
-    background-color: var(--primary1-colour) !important;
-    color: var(--activetext-colour) !important;
-    padding: 10px 15px !important;
-    border: none !important;
-    border-radius: 5px !important;
-    cursor: pointer !important;
-}
-
-button:hover {
-    background-color: var(--primary2-colour) !important;
-}
-
-/* Transparency/Overlay Effects */
-.overlay {
-    background: var(--transparency-1) !important;
-}
-
-/* Footer Styling */
-footer {
-    background: var(--secondary1-colour) !important;
-    color: var(--activetext-colour) !important;
-    padding: 10px !important;
-    text-align: center !important;
+    --transparency-1: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    --transparency-2: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    --transparency-3: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    --transparency-4: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    --transparency-5: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
 }
   
-/* Additional styling to ensure the theme is applied consistently */
-* {
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box !important;
-}
+/*
+Theme Owned and Made by VaporousCreeper#9514
+  
+Background Img: https://wpblink.com/sites/default/files/wallpaper/anime/66761/sword-art-online-ii-wallpapers-hd-66761-327252.png 
+Transparency2 Module: https://raw.githack.com/Ruben7173/Ruben7173.github.io/master/BetterDiscord-Themes/Modules/transparency2.css - By Ruben7173#5048
+
+The 2 items above are not owned by me, They go to there respected owners 
+*/
